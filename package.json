@@ -1,0 +1,34 @@
+{
+  "name": "loginregistration",
+  "version": "1.0.0",
+  "description": "Login Registration Today",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeman205/LoginRegistration.git"
+  },
+  "keywords": [
+    "Login/Registration"
+  ],
+  "author": "Aeman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeman205/LoginRegistration/issues"
+  },
+  "homepage": "https://github.com/aeman205/LoginRegistration#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
