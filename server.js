@@ -8,6 +8,10 @@ const app =  express();
 app.use(express.json());
 
 
+// POST API URL
+// http://localhost:5000/registration
+//METH0D:POST
+
 
 app.post("/registration",async(req,res)=>{
 
