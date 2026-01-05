@@ -2,6 +2,8 @@ import express from 'express';
 
 import bcrypt  from 'bcryptjs';
 
+import DBConnect from './DB/ConnectionDB.js';
+
 
 const app =  express();
 
@@ -33,5 +35,6 @@ app.post("/registration",async(req,res)=>{
 
 
 app.listen(5000,()=>{
+    DBConnect();
     console.log("Server is running successfully")
 })
