@@ -52,13 +52,13 @@ app.post("/registration",async(req,res)=>{
          return res.send("All Fields Are Required")
     }
 
-    var UserAvail = await UserDataSchema.find({useremail});
+    var UserAvail = await UserDataSchema.findOne({useremail});
 
-    // if(!UserAvail.useremail){
-    //     return res.send("Something Went Wrong!");
-    // }
+    if(!UserAvail){
+        return res.send("Something Went Wrong!");
+    }
 
-    var db_pass = UserAvail[0].userpass;
+    var db_pass = UserAvail.userpass;
 
     var validornot = await bcrypt.compare(userpass , db_pass)
 
